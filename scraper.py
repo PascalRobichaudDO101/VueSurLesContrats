@@ -16,12 +16,12 @@ import lxml.html
 scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
 # # An arbitrary query against the database
-scraperwiki.sql.select("* from data where 'name'='peter'")
+test = scraperwiki.sql.select("* from data where 'name'='peter'")
 
 # You don't have to do things with the ScraperWiki and lxml libraries.
 # You can use whatever libraries you want: https://morph.io/documentation/python
 # All that matters is that your final data is written to an SQLite database
 #called "data.sqlite" in the current working directory which has at least a table
 #called "data".
-
+print(test)
 print("Traitement termine")
