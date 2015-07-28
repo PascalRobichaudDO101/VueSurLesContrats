@@ -6,6 +6,7 @@ import lxml.html
 #
 # # Read in a page
 html = scraperwiki.scrape("http://foo.com")
+print(html)
 #
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
@@ -20,5 +21,5 @@ scraperwiki.sql.select("* from data where 'name'='peter'")
 # You don't have to do things with the ScraperWiki and lxml libraries.
 # You can use whatever libraries you want: https://morph.io/documentation/python
 # All that matters is that your final data is written to an SQLite database
-called "data.sqlite" in the current working directory which has at least a table
-called "data".
+#called "data.sqlite" in the current working directory which has at least a table
+#called "data".
